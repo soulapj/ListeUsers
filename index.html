@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <img src="./resources/logo.svg" alt="Icon" width="50" height="50" />
+          <h1>Users</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/dashboard.svg"
+                alt="Icon"
+                width="20"
+                height="20"
+              />
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/speech-bubble.svg"
+                alt="Icon"
+                width="20"
+                height="20"
+              />
+              Messenger</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/server.svg"
+                alt="Icon"
+                width="20"
+                height="20"
+              />
+              Utilisateurs</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/calendar.svg"
+                alt="Icon"
+                width="20"
+                height="20"
+              />
+              Agenda</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h1 class="users"></h1>
+        <input type="text" id="searchInput" placeholder="Rechercher par nom...">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  -->
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
